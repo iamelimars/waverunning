@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { useSiteContext } from "../../context/context";
 
 const Card = ({ item }) => {
+  const { setIsBookingOpen } = useSiteContext();
+
   return (
     <Container>
       <Wrapper>
@@ -15,7 +18,7 @@ const Card = ({ item }) => {
           {item.price}
         </Price>
         <h4>per jetski</h4>
-        <button>BOOK NOW</button>
+        <button onClick={() => setIsBookingOpen(true)}>BOOK NOW</button>
       </Wrapper>
       {item.promotion && <h4 className="promotion">{item.promotion}</h4>}
     </Container>
@@ -60,13 +63,19 @@ const Wrapper = styled.div`
   flex-direction: column;
   background: #1e2246;
   border: 4px solid ${({ theme }) => theme.secondary};
-  box-shadow: 0px 19px 13px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 1rem;
   color: #fff;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    box-shadow: 0px 25px 18px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+  }
   .full,
   .normal {
     font-size: 2rem;
@@ -98,5 +107,13 @@ const Wrapper = styled.div`
     color: ${({ theme }) => theme.secondary};
     font-family: Montserrat;
     font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06),
+        0 6px 6px -1px rgba(8, 11, 14, 0.1);
+      transform: translateY(-5px);
+    }
   }
 `;

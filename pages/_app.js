@@ -4,6 +4,7 @@ import { Provider as StyletronProvider } from "styletron-react";
 import { styletron, debug } from "../styletron";
 import { StyleReset } from "atomize";
 import { ThemeProvider as Provider } from "atomize";
+import { SiteProvider } from "../context/context";
 import Nav from "../components/Nav";
 import "../styles.css";
 
@@ -35,10 +36,12 @@ export default class MyApp extends App {
       <ThemeProvider theme={theme}>
         <StyletronProvider value={styletron} debug={debug} debugAfterHydration>
           <Provider theme={atomizeTheme}>
-            <StyleReset />
-            <GlobalStyle />
-            <Nav />
-            <Component {...pageProps} />
+            <SiteProvider>
+              <StyleReset />
+              <GlobalStyle />
+              <Nav />
+              <Component {...pageProps} />
+            </SiteProvider>
           </Provider>
         </StyletronProvider>
       </ThemeProvider>

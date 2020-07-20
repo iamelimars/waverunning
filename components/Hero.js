@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "atomize";
+import { useSiteContext } from "../context/context";
 
 const Hero = () => {
+  const { setIsBookingOpen } = useSiteContext();
   return (
     <>
       <Container bgImg="/bg.jpg" className="banner">
@@ -29,6 +31,7 @@ const Hero = () => {
             rounded="circle"
             m={{ t: "1.5rem" }}
             textSize="body"
+            onClick={() => setIsBookingOpen(true)}
           >
             Rent a JetSki Now!
           </Button>

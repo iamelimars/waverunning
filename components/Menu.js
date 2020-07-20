@@ -1,8 +1,11 @@
 import React from "react";
 import { SideDrawer, Icon, scrollTo, Button } from "atomize";
 import styled from "styled-components";
+import { useSiteContext } from "../context/context";
 
 const Menu = ({ isOpen, onClose }) => {
+  const { setIsBookingOpen, setIsFaqOpen } = useSiteContext();
+
   const onPress = (location) => {
     scrollTo(location);
     onClose();
@@ -13,11 +16,18 @@ const Menu = ({ isOpen, onClose }) => {
         <Icon name="Cross" color="primary" size="35px" />
       </Close>
       <Links>
-        <a onClick={() => onPress("#test")}>ABOUT</a>
-        <a onClick={() => onPress("#test")}>LOCATIONS</a>
-        <a onClick={() => onPress("#test")}>PACKAGES</a>
-        <a onClick={() => onPress("#test")}>CONTACT</a>
-        <a onClick={() => onPress("#test")}>FAQ</a>
+        <a onClick={() => onPress("#about")}>ABOUT</a>
+        <a onClick={() => onPress("#locations")}>LOCATIONS</a>
+        <a onClick={() => onPress("#packages")}>PACKAGES</a>
+        <a onClick={() => onPress("#contact")}>CONTACT</a>
+        <a
+          onClick={() => {
+            onClose();
+            setIsFaqOpen(true);
+          }}
+        >
+          FAQ
+        </a>
         <BookBtn
           bg="primary"
           textWeight="900"
@@ -25,7 +35,10 @@ const Menu = ({ isOpen, onClose }) => {
           w="250px"
           h="50px"
           textSize="1.5rem"
-          onClick={() => onPress("#test")}
+          onClick={() => {
+            onClose();
+            setIsBookingOpen(true);
+          }}
         >
           BOOK NOW
         </BookBtn>

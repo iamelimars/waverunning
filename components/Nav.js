@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { scrollTo, Icon, Anchor, Button, Div, Image } from "atomize";
 import Menu from "./Menu";
+import { useSiteContext } from "../context/context";
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { setIsBookingOpen, setIsFaqOpen } = useSiteContext();
+
   return (
     <>
       <Wrapper>
@@ -15,17 +18,18 @@ const Nav = () => {
             alt=""
           />
           <Links d={{ xs: "none", lg: "flex" }}>
-            <a onClick={() => scrollTo("#test")}>About</a>
+            <a onClick={() => scrollTo("#about")}>About</a>
             <a onClick={() => scrollTo("#locations")}>Locations</a>
-            <a onClick={() => scrollTo("#test")}>Packages</a>
-            <a onClick={() => scrollTo("#test")}>Contact</a>
-            <a onClick={() => scrollTo("#test")}>FAQ</a>
+            <a onClick={() => scrollTo("#packages")}>Packages</a>
+            <a onClick={() => scrollTo("#contact")}>Contact</a>
+            <a onClick={() => setIsFaqOpen(true)}>FAQ</a>
           </Links>
           <BookBtn
             d={{ xs: "none", lg: "flex" }}
             bg="secondary"
             shadow="2"
             hoverShadow="4"
+            onClick={() => setIsBookingOpen(true)}
           >
             Book Now
           </BookBtn>

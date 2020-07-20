@@ -35,7 +35,7 @@ const packages = [
 
 const Packages = () => {
   return (
-    <Container>
+    <Container id="packages">
       <Wrapper>
         <h1>PACKAGES</h1>
         <Row>
@@ -52,19 +52,13 @@ const Packages = () => {
             <span>refunded</span> when skis are returned undamaged & on time!
           </p>
           <p>
-            <span>3</span> DAY <span>CANCELLATION</span> FEE
+            <span>24</span> HOUR <span>CANCELLATION</span> FEE
             <br />
-            <span>$25</span> when canceled <span>2</span> days before scheduled
-            date
-            <br />
-            <span>$50</span> when canceled <span>1</span> day before scheduled
-            date
-            <br />
-            <span>FULL PRICE</span> when canceled on the <span>day</span> of
-            scheduled appt
+            <span>FULL PRICE</span> is charged when cancelled within{" "}
+            <span>24 HOURS</span> of scheduled appointment.
           </p>
         </Disclaimer>
-        <script src="https://square.site/appointments/buyer/widget/mltr6gvje939ke/8G9CPASP3E2Q4.js"></script>
+        {/* <script src="https://square.site/appointments/buyer/widget/mltr6gvje939ke/8G9CPASP3E2Q4.js"></script> */}
       </Wrapper>
     </Container>
   );

@@ -4,7 +4,13 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import Locations from "../components/Locations";
 import Packages from "../components/Packages/Packages";
-import { Div, Button, Modal, Icon, Text } from "atomize";
+import { Button, Modal, Icon } from "atomize";
+import { useSiteContext } from "../context/context";
+import Policy from "../components/Policy";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Faq from "../components/Faq";
 
 const Title = styled.h1`
   font-size: 50px;
@@ -40,7 +46,7 @@ const AlignCenterModal = ({ isOpen, onClose }) => {
       h={{ xs: "90vh", md: "90vh" }}
       maxW={{ xs: "90vw", md: "90vw" }}
       // m="0"
-      bg="#FBFCFD"
+      bg="#fff"
       p={{
         x: { xs: "1rem", md: "0.2rem" },
         t: { xs: "3rem", md: "1rem" },
@@ -59,21 +65,53 @@ const AlignCenterModal = ({ isOpen, onClose }) => {
       />
       <Popup
         // src="https://squareup.com/appointments/book/ouxfjo8dfqenei/8G9CPASP3E2Q4/services"
-        // src="https://squareup.com/appointments/book/mcw1nr2ban48z5/D77N6JXWHW3JY/services"
-        // src="https://my.setmore.com/bookingpage/948be9b6-e463-4847-af15-75395f636ca0"
-        src="https://calendly.com/emarshall3235?background_color=fff&text_color=1e2246&primary_color=f8bf30"
+        src="https://squareup.com/appointments/book/mcw1nr2ban48z5/D77N6JXWHW3JY/services"
+        // src="https://calendly.com/emarshall3235?background_color=fff&text_color=1e2246&primary_color=f8bf30"
         frameBorder="0"
       ></Popup>
     </Modal>
   );
 };
 
+const FaqModal = ({ isOpen, onClose }) => {
+  return (
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      rounded="0"
+      maxW="100vw"
+      m="0"
+      h="100vh"
+      bg="secondary"
+    >
+      <Icon
+        name="Cross"
+        pos="absolute"
+        top="1rem"
+        right="1rem"
+        size="30px"
+        onClick={onClose}
+        cursor="pointer"
+        color="primary"
+      />
+      <Faq />
+    </Modal>
+  );
+};
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const {
+    isBookingOpen,
+    setIsBookingOpen,
+    isFaqOpen,
+    setIsFaqOpen,
+  } = useSiteContext();
+
   return (
     <>
       <Head>
-        <title>WaveRunning Rentals</title>
+        <title>WaveRunning Jetski Rentals - South Florida</title>
         <link rel="icon" href="/favicon.ico" />
         <script
           type="text/javascript"
@@ -87,7 +125,15 @@ const Home = () => {
       <Hero />
       <Locations />
       <Packages />
-      <AlignCenterModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <Policy />
+      <About />
+      <Contact />
+      <Footer />
+      <AlignCenterModal
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+      />
+      <FaqModal isOpen={isFaqOpen} onClose={() => setIsFaqOpen(false)} />
     </>
   );
 };

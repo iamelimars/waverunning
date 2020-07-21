@@ -8,7 +8,7 @@ const About = () => {
         <h1>ABOUT</h1>
         <Text>
           <p>
-            We can deliver our jet-skis to any of the <span>6</span> locations
+            We can deliver our jet-skis to any of the <span>7</span> locations
             listed about. Just schedule a time & place!
           </p>
           <p>

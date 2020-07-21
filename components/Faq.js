@@ -21,13 +21,13 @@ const questions = [
   {
     question: "I’ve never been on a jet ski before, is it dangerous?",
     answer:
-      "Waverunners are just like cars, bikes, motorcycles, etc. except they DON'T have brakes! You must know how to obey all boating rules and regulations from the test provided during the paperwork. Our trained staff provides a full orientation on how to operate and where to operate your jet ski for your safe riding pleasure before heading out to our riding area.",
+      "Jet skis are just like cars, bikes, motorcycles, etc. except they DON'T have brakes! You must know how to obey all boating rules and regulations from the test provided during the paperwork. Our trained staff provides a full orientation on how to operate and where to operate your jet ski for your safe riding pleasure before heading out to our riding area.",
   },
   {
     question:
       "How old do I need to be in order to rent, ride and drive a Jet Ski at your locations? Do I need a valid boaters license?",
     answer:
-      "In order to rent a Jet Ski, you must be 18 years of age with a valid government issued ID, have a major credit card and or $250 cash for a refundable security deposit on each ski. You can be 16 years of age to drive a jet ski alone, but must have a valid government issued ID, along with parent/guardian consent (parent or guardian will be responsible for any and all damages that are done to the jet ski and or any other personal property jet ski makes contact with). A Boaters License is recommended but not required. We are authorized by the Department of Natural resources Police to provide a temporary license for renters who do not have a boaters license. We provide all the necessary literature and resources to pass a quiz for the temporary license. Children riding on the ski must be at least 3 or 4 years old. Children able to ride must sit behind the driver (not in front) and be able to hold on.",
+      "In order to rent a Jet Ski, you must be 18 years of age with a valid government issued ID, have a major credit card and or $200 cash for a refundable security deposit on each ski. You can be 16 years of age to drive a jet ski alone, but must have a valid government issued ID, along with parent/guardian consent (parent or guardian will be responsible for any and all damages that are done to the jet ski and or any other personal property jet ski makes contact with). A Boaters License is recommended but not required. We are authorized by the Department of Natural resources Police to provide a temporary license for renters who do not have a boaters license. We provide all the necessary literature and resources to pass a quiz for the temporary license. Children riding on the ski must be at least 6 or 7 years old. Children able to ride must sit behind the driver (not in front) and be able to hold on.",
   },
   {
     question:

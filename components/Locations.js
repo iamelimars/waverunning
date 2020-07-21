@@ -7,10 +7,6 @@ const locationsList = [
     address: "2700 6th Ave S, Lake Worth, FL 33461",
   },
   {
-    name: "Boynton Beach inlet Park",
-    address: "6990 N Ocean Blvd, Boynton Beach, FL 33435",
-  },
-  {
     name: "Lake Ida West Park",
     address: "1455 Lake Ida Rd, Delray Beach, FL 33444",
   },

@@ -5,12 +5,12 @@ const questions = [
   {
     question: "Do you allow walk ins or do I need to make a reservation?",
     answer:
-      "Yes we do allow walk-ins but we prefer that you make a reservation at least one day in advance. You can make a reservation online",
+      "Yes we do allow walk-ins (upon availability) but we prefer that you make a reservation prior to renting. Reservations are available online.",
   },
   {
     question: "How much does it cost? What payment methods do you accept?",
     answer:
-      "Please visit the package page of our website for costs. We accept credit cards and debt cards",
+      "Please visit the package page of our website for costs. We only accept card payments",
   },
   {
     question:
@@ -27,13 +27,13 @@ const questions = [
     question:
       "How old do I need to be in order to rent, ride and drive a Jet Ski at your locations? Do I need a valid boaters license?",
     answer:
-      "In order to rent a Jet Ski, you must be 18 years of age with a valid government issued ID, have a major credit card and or $200 cash for a refundable security deposit on each ski. You can be 16 years of age to drive a jet ski alone, but must have a valid government issued ID, along with parent/guardian consent (parent or guardian will be responsible for any and all damages that are done to the jet ski and or any other personal property jet ski makes contact with). A Boaters License is recommended but not required. We are authorized by the Department of Natural resources Police to provide a temporary license for renters who do not have a boaters license. We provide all the necessary literature and resources to pass a quiz for the temporary license. Children riding on the ski must be at least 6 or 7 years old. Children able to ride must sit behind the driver (not in front) and be able to hold on.",
+      "In order to rent a Jet Ski, you must be 18 years of age with a valid government issued ID, have a major credit card and or $200 cash for a refundable security deposit on each ski. You can be 16 years of age to drive a jet ski alone, but must have a valid government issued ID, along with parent/guardian consent (parent or guardian will be responsible for any and all damages that are done to the jet ski and or any other personal property jet ski makes contact with). A Boaters License is recommended but not required. We are authorized by the Department of Natural resources Police to provide a temporary license for renters who do not have a boaters license. We provide all the necessary literature and resources to pass a quiz for the temporary license. Children riding on the ski must be at least 6 to 7 years old. Children able to ride must sit behind the driver (not in front) and be able to hold on.",
   },
   {
     question:
       "What if I don’t show up for my rental? Do you hold any deposits?",
     answer:
-      "When you make your reservation online, you will pay in full. We have a 1 day cancellation policy prior to reservation. You cannot change or cancel your reservation in the 24 hours prior to your reservation. The rental spot(s) reserved are designated for you, if you are a “no-show” or arrive late, your temporary hold will not be released and used to pay for your designated rental slot. there is no rescheduling or refunds.",
+      "When you make your reservation online, you will pay in full. You cannot change or cancel your reservation within the 24 hours prior to your reservation. The rental spot(s) reserved are designated for you, if you are a “no-show” or arrive late, your temporary hold will not be released and used to pay for your designated rental slot. There are no rescheduling or refunds.",
   },
   {
     question: "Will I need to pay for the gas in the jet ski?",
@@ -42,21 +42,21 @@ const questions = [
   {
     question: "Will the weather affect my Jet Ski Rental?",
     answer:
-      "We are open rain or shine! However, if in the event of heavy rain, wind warnings, or thunderstorms, it will be at the customers discretion and obligation to reschedule your trip for a different time or day. Trips returned due to inclement weather and under 45 minutes will be rescheduled for a later date. Trips returned due to inclement weather that extend past 45 minutes, will be counted as a full trip and no rescheduling or refunds will be allowed.",
+      "We are open rain or shine! However, if in the event of heavy rain, wind warnings, or thunderstorms, it will be at the customers discretion and obligation to reschedule your trip for a different time or day. Trips returned due to inclement weather and under 45 minutes will be rescheduled for a later date. Trips returned due to inclement weather that extend past 45 minutes, will be counted as a full trip and no rescheduling or refunds will be allowed. ",
   },
   {
     question: "Do you offer insurance for your jet skis",
     answer:
-      "Due to the nature of the industry, rental insurance does not exist. It is the responsibility of the renter to maintain proper safety while operating the jet ski.",
+      "Due to the nature of the industry, rental insurance does not exist. It is the responsibility of the renter to maintain proper safety while operating the jet ski. ",
   },
   {
     question: "What Do consider a full day rental",
-    answer: "6 hours is considered a full day rental",
+    answer: "Six hours is considered a full day rental.",
   },
   {
     question: "Am I responsible for damaged equipment or accessories ",
     answer:
-      "If there is a problem with the jet ski we will determine  the cause and make a determination of who is responsible for the damages. As part of the rental agreement the renter is responsible for the jet ski and equipment while in their posession and any damages that occur during that time. For any questions please ask beforehand.",
+      "All jet skis are inspected before and after rentals. If there is a problem with the jet ski we will determine the cause and make a determination of who is responsible for the damages. As part of the rental agreement the renter is responsible for the jet ski and equipment while in their possession and any damages that occur during time of rental. For any questions please ask beforehand.",
   },
 ];
 

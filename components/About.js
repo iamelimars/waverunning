@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Container id="about">
       <Wrapper>
-        <h1>ABOUT</h1>
+        <h1>ABOUTT</h1>
         <Text>
           <p>
             We can deliver our jet-skis to any of the <span>7</span> locations
